@@ -1,9 +1,11 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Models\Place;
+use App\Models\Recommandation;
 
 class User extends Authenticatable
 {
@@ -15,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'profile_picture'
     ];
 
     /**
@@ -30,4 +32,14 @@ class User extends Authenticatable
     protected $guard = [
         ''
     ];
+
+    public function places()
+    {
+        return $this->belongsToMany(Place::class)->withPivot('rating', 'message')->withTimestamps();
+    }
+
+    public function recommandations()
+    {
+        return $this->hasMany(Recommandation::class);
+    }
 }
