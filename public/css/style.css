@@ -1,0 +1,66 @@
+body {
+	font-size: 1.5rem;
+}
+
+.seemore-padding {
+	padding: 5rem 1.5rem;
+}
+
+.seemore-margin {
+	margin: 0 0.25rem;
+}
+
+.seemore-border {
+	border: 1px solid black;
+}
+
+.seemore-picture {
+	max-width: 100%;
+	max-height: 420px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.details-padding {
+	padding: 5rem 5rem;
+}
+
+.img {
+	background-image: url(https://compathy-magazine-assets.compathy.net/uploads/2016/11/Mount-Mitake-640x480.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 540px;
+}
+
+.details-image {
+	max-width: 1920px;
+	max-height: 540px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  font-size: 2.5rem;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color: gold;
+}
+
+.login-padding {
+	padding: 5rem 5rem;
+}
+
+.login-form-padding {
+	padding-top: 3rem;
+}
