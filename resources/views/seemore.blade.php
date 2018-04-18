@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="fluid-container hendi-background">
+<div class="fluid-container">
     <div class="seemore-padding">
         <div class="d-flex flex-row" style="margin: 0.5rem; cursor: pointer" onclick="onClick()">
             <div class="seemore-margin seemore-border" style="flex: 2; text-align: center;">

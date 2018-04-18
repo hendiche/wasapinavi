@@ -56,3 +56,11 @@ body {
    position: absolute;
    color: gold;
 }
+
+.login-padding {
+	padding: 5rem 5rem;
+}
+
+.login-form-padding {
+	padding-top: 3rem;
+}
