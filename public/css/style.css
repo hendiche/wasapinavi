@@ -43,7 +43,7 @@ body {
 
 
 /*============================================ details ===========================================*/
-.details-padding, .login-padding, .facility-padding {
+.details-padding, .login-padding, .facility-padding, .register-padding {
 	padding: 5rem 5rem;
 }
 
@@ -127,12 +127,14 @@ body {
 }
 
 
-/*============================================ login ===========================================*/
-.login-form-padding {
+/*============================================ login, register ===========================================*/
+.login-form-padding, .register-padding > form > .d-flex.flex-column {
 	padding-top: 3rem;
 }
 
-.login-padding #email, .login-padding #password {
+.login-padding #email, .login-padding #password,
+.register-padding #email, .register-padding #name,
+.register-padding #password, .register-padding #password-confirm {
 	width: 40%; 
 	margin: auto;
 }
@@ -140,6 +142,7 @@ body {
 .login-padding .justify-content-between.col-4 {
 	align-self: center;
 }
+
 
 
 /*============================================ facility ===========================================*/

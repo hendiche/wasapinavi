@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="d-flex flex-row justify-content-center login-form-padding">
-                    <a href="#">Don`t have account? Register!!!</a>
+                    <a href="{{ route('register') }}">Don`t have account? Register!!!</a>
                 </div>
             </div>
 
