@@ -28,3 +28,5 @@ Route::get('/facility', 'HomeController@facility')->name('facility');
 Route::get('/facility/details', 'HomeController@facilityDetails')->name('facilityDetails');
 
 Route::get('/aboutus', 'HomeController@aboutus')->name('aboutus');
+
+Route::get('/contact', 'HomeController@contact')->name('contact');

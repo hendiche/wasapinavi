@@ -1,6 +1,9 @@
 body {
 	font-size: 1.5rem;
 }
+input, .btn, textarea {
+	border-radius: 0 !important; 
+}
 
 /*============================================ seemore ===========================================*/
 .seemore-padding {
@@ -44,7 +47,7 @@ body {
 
 /*============================================ details ===========================================*/
 .details-padding, .login-padding, .facility-padding, .register-padding,
-.aboutus-padding {
+.aboutus-padding, .contact-padding {
 	padding: 5rem 5rem;
 }
 
@@ -175,3 +178,21 @@ body {
 .aboutus-padding > div p {
  	text-indent: 50px;
  }
+
+
+ /*============================================ about us ===========================================*/
+.contact-padding .contact-form {
+	margin: 5rem 0 0 0;
+}
+
+.contact-padding .contact-form > form > .form-group {
+	margin: 2rem 0;
+}
+
+.contact-padding .contact-form > form > .form-group textarea {
+	resize: none;
+}
+
+.contact-padding .contact-form > form > .form-group:last-child {
+	text-align: center;
+}
