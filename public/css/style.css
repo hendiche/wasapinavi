@@ -43,7 +43,8 @@ body {
 
 
 /*============================================ details ===========================================*/
-.details-padding, .login-padding, .facility-padding, .register-padding {
+.details-padding, .login-padding, .facility-padding, .register-padding,
+.aboutus-padding {
 	padding: 5rem 5rem;
 }
 
@@ -164,3 +165,13 @@ body {
 	padding-top: 0.6rem; 
 	padding-bottom: 0.6rem;
 }
+
+
+/*============================================ about us ===========================================*/
+.aboutus-padding > div {
+	padding-bottom: 8rem;
+}
+
+.aboutus-padding > div p {
+ 	text-indent: 50px;
+ }
