@@ -234,6 +234,15 @@ input, .btn, textarea {
 	z-index: 999;
 }
 
+.carousel-control-next, .carousel-control-prev {
+	width: 7rem !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	width: 45px;
+	height: 45px;
+}
+
 
  /*============================================ footer ===========================================*/
 .footer-padding img {
