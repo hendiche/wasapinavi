@@ -1,26 +1,44 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                    <div class="d-flex flex-row-reverse">
-                      <div class="p-2 text-light bg-dark">Flex item 1</div>
-                      <div class="p-2">Flex item 2</div>
-                      <div class="p-2">Flex item 3</div>
-                    </div>
-                </div>
+<div class="fluid-container">
+    <div class="home-padding">
+        <div id="okutama-hiking">
+            <h1 class="display-4 text-center">Okutama Hiking</h1>
+            <div class="d-flex flex-row">
+                <div><img src="https://compathy-magazine-assets.compathy.net/uploads/2016/11/Mount-Mitake-640x480.jpg"></div>
+                <div><img src="https://compathy-magazine-assets.compathy.net/uploads/2016/11/Mount-Odake-640x480.jpg"></div>
+                <div><img src="https://compathy-magazine-assets.compathy.net/uploads/2016/11/Mount-Kumotori-640x480.jpg"></div>
+                <div><img src="https://compathy-magazine-assets.compathy.net/uploads/2016/11/Mount-Mito-e1477981548336-640x477.jpg"></div>
+            </div>
+            <div class="text-center">
+                <a href="{{ route('seemore') }}" class="btn btn-primary">Seemore</a>
+            </div>
+        </div>
+        <br><br><br>
+        <div id="okutama-sightseeing">
+            <h1 class="display-4 text-center">Okutama Sightseeing</h1>
+            <div class="d-flex flex-row">
+                <div><img src="https://compathy-magazine-assets.compathy.net/uploads/2016/11/Lake-Okutama-640x480.jpg"></div>
+                <div><img src="https://compathy-magazine-assets.compathy.net/uploads/2016/11/Nipparra-Limestone-Cave-640x360.jpg"></div>
+                <div><img src="https://compathy-magazine-assets.compathy.net/uploads/2016/11/Hatonosu-Keikoku-Valley-640x480.jpg"></div>
+                <div><img src="https://compathy-magazine-assets.compathy.net/uploads/2016/11/Shiromaru-Dam-Fish-Pass-640x640.jpg"></div>
+            </div>
+            <div class="text-center">
+                <a href="{{ route('seemore') }}" class="btn btn-primary">Seemore</a>
+            </div>
+        </div>
+        <br><br><br>
+        <div id="okutama-more-things">
+            <h1 class="display-4 text-center">More Things to do in Okutama</h1>
+            <div class="d-flex flex-row">
+                <div><img src="https://compathy-magazine-assets.compathy.net/uploads/2016/11/Kawai-Camping-Ground-640x640.jpg"></div>
+                <div><img src="https://compathy-magazine-assets.compathy.net/uploads/2016/11/Moegi-No-Yu-640x479.jpg"></div>
+                <div><img src="https://compathy-magazine-assets.compathy.net/uploads/2016/11/Okutama-Mizuto-Midorino-Fureaikan-640x427.jpg"></div>
+                <div><img src="https://www.compathy.net/magazine/wp-content/uploads/2016/11/Okutama-Wasabi-640x480.jpg"></div>
+            </div>
+            <div class="text-center">
+                <a href="{{ route('seemore') }}" class="btn btn-primary">Seemore</a>
             </div>
         </div>
     </div>

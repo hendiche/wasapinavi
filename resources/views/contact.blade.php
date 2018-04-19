@@ -25,7 +25,7 @@
                     {{-- <input type="text" name="message" class="form-control form-control-lg" placeholder="Enter Your Message"> --}}
                     <textarea class="form-control form-control-lg" rows="6" placeholder="Enter Your Message"></textarea>
                 </div>
-                <div class="form-group">
+                <div class="form-group text-center">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
