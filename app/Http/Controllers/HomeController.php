@@ -40,4 +40,9 @@ class HomeController extends Controller
     {
         return view('facility');
     }
+
+    public function facilityDetails()
+    {
+        return view('facilityDetails');
+    }
 }

@@ -24,3 +24,5 @@ Route::get('/seemore', 'HomeController@seemore')->name('seemore');
 Route::get('/details', 'HomeController@details')->name('details');
 
 Route::get('/facility', 'HomeController@facility')->name('facility');
+
+Route::get('/facility/details', 'HomeController@facilityDetails')->name('facilityDetails');
