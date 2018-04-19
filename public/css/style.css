@@ -2,12 +2,23 @@ body {
 	font-size: 1.5rem;
 }
 
+/*============================================ seemore ===========================================*/
 .seemore-padding {
 	padding: 5rem 1.5rem;
 }
 
 .seemore-margin {
 	margin: 0 0.25rem;
+}
+
+.seemore-row {
+	margin: 0.5rem;
+	cursor: pointer;
+}
+
+.seemore-img-box {
+	flex: 2;
+	text-align: center;
 }
 
 .seemore-border {
@@ -21,8 +32,23 @@ body {
 	object-position: center;
 }
 
-.details-padding {
+.seemore-paragraf {
+	flex: 4;
+	text-indent: 50px;
+}
+
+.seemore-paragraf > p {
+	padding-left: 1.5rem;
+}
+
+
+/*============================================ details ===========================================*/
+.details-padding, .login-padding, .facility-padding {
 	padding: 5rem 5rem;
+}
+
+.details-padding > h1.display-4 {
+	margin-top: 3rem;
 }
 
 .img {
@@ -31,6 +57,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 540px;
+	flex: 1;
 }
 
 .details-image {
@@ -38,6 +65,38 @@ body {
 	max-height: 540px;
 	object-fit: cover;
 	object-position: center;
+}
+
+.details-desc {
+	margin: 2rem 0;
+}
+
+.details-reviews {
+	border: 1px solid black;
+	padding: 2rem;
+}
+
+.details-reviews > .profile-picture {
+	flex: 1;
+	text-align: center;
+	margin-left: -2rem;
+}
+
+.profile-picture img {
+	width: 204px;
+	height: 225px;
+	border: 1px solid black;
+}
+
+.details-reviews >.comment {
+	flex: 4;
+}
+
+.comment .d-flex > .rating {
+	flex: 1;
+}
+.comment .d-flex > .date {
+	flex: 4;
 }
 
 .rating {
@@ -57,10 +116,48 @@ body {
    color: gold;
 }
 
-.login-padding {
-	padding: 5rem 5rem;
+.details-padding > textarea {
+	resize: none;
+	height: 225px;
 }
 
+.details-padding .d-flex.lex-row > .ml-auto {
+	padding-top: 1rem;
+	align-self: flex-end;
+}
+
+
+/*============================================ login ===========================================*/
 .login-form-padding {
 	padding-top: 3rem;
+}
+
+.login-padding #email, .login-padding #password {
+	width: 40%; 
+	margin: auto;
+}
+
+.login-padding .justify-content-between.col-4 {
+	align-self: center;
+}
+
+
+/*============================================ facility ===========================================*/
+.facility-padding > h1 {
+	margin-bottom: 3rem
+}
+
+.facility-padding #googleMap {
+	width:100%;
+	height:500px;
+}
+
+.facility-padding > hr {
+	margin: 5rem 0 2rem;
+	border-top: 0.3rem solid #aaa;
+}
+
+.facility-padding .facility.row .col-xl-3 {
+	padding-top: 0.6rem; 
+	padding-bottom: 0.6rem;
 }

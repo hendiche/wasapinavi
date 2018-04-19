@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="fluid-container">
-    <div class="details-padding">
+    <div class="login-padding">
         {{-- <div>{{ __('Login') }}</div> --}}
         <form method="POST" action="{{ route('login') }}">
             @csrf
@@ -12,7 +12,7 @@
                     <label for="email">{{ __('E-Mail') }}</label>
                 </div>
                 <div>
-                    <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus style="width: 40%; margin: auto;">
+                    <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 
                     @if ($errors->has('email'))
                         <span class="invalid-feedback">
@@ -24,7 +24,7 @@
                     <label for="password">{{ __('Password') }}</label>
                 </div>
                 <div>
-                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required style="width: 40%; margin: auto;">
+                    <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                     @if ($errors->has('password'))
                         <span class="invalid-feedback">
@@ -37,7 +37,7 @@
                         {{ __('Login') }}
                     </button>
                 </div>
-                <div class="d-flex flex-row justify-content-between login-form-padding col-4" style="align-self: center;">
+                <div class="d-flex flex-row justify-content-between login-form-padding col-4">
                     <div>
                         <a href="#" class="btn btn-primary">Login With FB</a>
                     </div>
