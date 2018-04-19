@@ -8,7 +8,7 @@ input, .btn, textarea {
 .btn {
 	font-size: 1.2rem !important;
 }
-/*============================================ seemore ===========================================*/
+/*============================================ home ===========================================*/
 .home-padding {
 	padding: 5rem 1.5rem;
 }
@@ -76,7 +76,7 @@ input, .btn, textarea {
 
 /*============================================ details ===========================================*/
 .details-padding, .login-padding, .facility-padding, .register-padding,
-.aboutus-padding, .contact-padding {
+.aboutus-padding, .contact-padding, .footer-padding {
 	padding: 5rem 5rem;
 }
 
@@ -206,7 +206,7 @@ input, .btn, textarea {
 
 .aboutus-padding > div p {
  	text-indent: 50px;
- }
+}
 
 
  /*============================================ about us ===========================================*/
@@ -220,4 +220,34 @@ input, .btn, textarea {
 
 .contact-padding .contact-form > form > .form-group textarea {
 	resize: none;
+}
+
+ /*============================================ header ===========================================*/
+#header img {
+ 	width: 18rem;
+}
+#header div.text-center:first-child {
+	position: absolute;
+	top: 70px;
+	/*left: 42.5%;*/
+	left: 814px;
+	z-index: 999;
+}
+
+
+ /*============================================ footer ===========================================*/
+.footer-padding img {
+ 	width: 22rem;
+}
+
+.footer-padding ul.list-inline {
+ 	margin-top: 3rem;
+}
+
+.footer-padding ul.list-inline > li.list-inline-item {
+ 	padding: 0 1.5rem;
+}
+
+.footer-padding div.text-center:last-child {
+ 	margin-top: 10rem;
 }
