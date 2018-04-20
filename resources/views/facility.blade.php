@@ -4,7 +4,13 @@
 <div class="fluid-container">
     <div class="facility-padding">
         <h1>Okutama-Machi, Nishitama-Gun, Tokyo : Map</h1>
-        <div id="googleMap"></div>
+        <iframe
+              width = "100%"
+              height = "600"
+              frameborder = "0" style = "border: 0"
+              src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyCumwYbtR9xK2hYcwnhL91C-JhF6reu6RY&q=35.81224,139.15249" allowfullscreen>
+        </iframe>
+        {{-- <div id="googleMap"></div> --}}
         <hr />
         <h1>Facilities in Okutama-Machi, Nishitama-Gun, Tokyo</h1>
         <div class="facility row">
@@ -73,7 +79,7 @@
     //     zoom:5,
     // };
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSBFhs_FXJPL8xDs15-fyCkZhq9ZAgIvM&callback=initMap"
-  type="text/javascript"></script>
+{{-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSBFhs_FXJPL8xDs15-fyCkZhq9ZAgIvM&callback=initMap"
+  type="text/javascript"></script> --}}
 @endsection
   

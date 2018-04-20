@@ -229,8 +229,8 @@ input, .btn, textarea {
 #header div.text-center:first-child {
 	position: absolute;
 	top: 70px;
-	/*left: 42.5%;*/
-	left: 814px;
+	left: 42.5%;
+	/*left: 814px;*/
 	z-index: 999;
 }
 

@@ -20,10 +20,70 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+
+    <style type="text/css">
+        .hendi-nav {
+            flex-direction: row-reverse;
+        }
+        .hendi-nav > li {
+             padding: 20px 1.5em 0 2em;
+        }
+        .hendi-nav > li > a {
+            font-size: 2rem;
+        }
+        .pos-f-t {
+            position: absolute;
+            top: 25px;
+            left: 2%;
+            right: 2%;
+            z-index: 9;
+            width: 96%;
+        }
+        button.navbar-toggler[type="button"] {
+            background-color: #343a40;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="p-4">
+                    <ul class="navbar-nav ml-auto hendi-nav">
+                        <!-- Authentication Links -->
+                        @guest
+                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('facility') }}">{{ __('Facility') }}</a></li>
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="navBarOnClick()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+        {{-- <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -67,9 +127,9 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
         <section id="header">
-            <div class="text-center">
+            <div class="text-center" id="img-logo">
                 <img src="{{ asset('images/logo.png') }}">
             </div>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -135,5 +195,27 @@
             </div>
         </section>
     </div>
+    <script type="text/javascript">
+        var onClick = false;
+        function navBarOnClick() {
+            var btn = document.getElementById('img-logo');
+            var header = document.getElementById('header');
+            if (onClick) {
+                onClick = false;
+                btn.style.top = '70px';
+                btn.style.transition = '0.35s';
+
+                header.style.paddingTop = '0px';
+                header.style.transition = '0.35s';
+            } else {
+                onClick = true;
+                btn.style.top = '215px';
+                btn.style.transition = '0.35s';
+
+                header.style.paddingTop = '185px';
+                header.style.transition = '0.35s';
+            }
+        }
+    </script>
 </body>
 </html>
